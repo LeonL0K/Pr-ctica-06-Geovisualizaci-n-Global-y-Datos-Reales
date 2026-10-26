@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Observatorio Global de Cultivos — Práctica 06</title>
+  <link rel="stylesheet" href="style.css" />
+  
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+<body>
+
+  <div id="loading">Cargando Globo Terráqueo...</div>
+
+  <div id="ui-panel">
+    <h1>🌍 Observatorio Global</h1>
+    <p class="ayuda">Haz clic en cualquier parte del globo para analizar el clima, suelo y biodiversidad.</p>
+
+    <div id="panel-datos" class="card hidden">
+      <h2 id="coord-title">Ubicación</h2>
+      <div id="clima-data">Cargando clima...</div>
+      <div id="biodiversidad-data">Cargando biodiversidad...</div>
+    </div>
+
+    <div id="panel-decisiones" class="card hidden">
+      <h2>🧠 Decisiones Agronómicas</h2>
+      <ul id="lista-decisiones"></ul>
+    </div>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
